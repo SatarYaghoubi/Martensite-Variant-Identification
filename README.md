@@ -43,9 +43,17 @@ python -m pip install -r requirements.txt
 
 ```bash
 python3 identify_martensite.py reference_austenite.data current.data \
+    [--a0 3.019 --a 2.89 --b 4.12 --c 4.62 --beta 96.8] \
+    [--cutoff 3.5] [--smooth 1] [--max-dist 0.10] \
+    [--out-prefix variants] [--no-plot]
+```
 
+Example (NiTi, MEAM potential):
 
-
+```bash
+python3 identify_martensite.py relaxed_NiTi_B2_meam.data out.detwinned_martensite.data \
+    --a0 2.9994 --out-prefix detwinned
+```
 
 | Option | Default | Meaning |
 |---|---|---|
