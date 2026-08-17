@@ -48,12 +48,7 @@ python3 identify_martensite.py reference_austenite.data current.data \
     [--out-prefix variants] [--no-plot]
 ```
 
-Example (NiTi, MEAM potential):
 
-```bash
-python3 identify_martensite.py relaxed_NiTi_B2_meam.data out.detwinned_martensite.data \
-    --a0 2.9994 --out-prefix detwinned
-```
 
 | Option | Default | Meaning |
 |---|---|---|
